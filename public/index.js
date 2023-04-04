@@ -24,3 +24,13 @@ submitButton.addEventListener("click", (event) => {
     });
   }
 });
+
+// circle text animation
+
+const circleText = document.querySelector(".circle-text p");
+circleText.innerHTML = circleText.innerText
+  .split("")
+  .map(
+    (char, i) => `<span style="transform:rotate(${i * 6}deg)">${char}</span>`
+  )
+  .join("");

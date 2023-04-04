@@ -97,11 +97,71 @@ body {
   border-left: none;
 }
 
-.nav-link:hover,
-.nav-link:active,
 .nav-link:link,
 .nav-link {
   color: black;
   font-size: 2.4rem;
   text-decoration: none;
+  align-self: center;
+  justify-self: center;
+  transform: 0.4s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+}
+
+.nav-link-instagram {
+  font-size: 2.4rem;
+}
+
+.title-logo-box {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  margin-top: 12rem;
+  margin-left: 10rem;
+
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title-img {
+  height: 20rem;
+}
+
+.logo-character-img {
+  height: 20rem;
+}
+
+.circle-text-paragraph {
+  position: absolute;
+  width: 100%;
+
+  font-size: 2.2rem;
+
+  transform: translateY(-245px);
+}
+
+.circle-text span {
+  position: absolute;
+  top: 10%;
+  left: 4.5%;
+  transform-origin: 0 150px;
+}
+
+.hero-description {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.hero-description p {
+  font-size: 3.2rem;
+  grid-column: 1;
+
+  margin-top: 8rem;
+  margin-left: 12rem;
+
+  width: 100rem;
 }
