@@ -116,6 +116,7 @@ body {
 }
 
 .title-logo-box {
+  position: relative;
   display: grid;
   grid-template-columns: 3fr 1fr;
 
@@ -132,7 +133,12 @@ body {
 }
 
 .logo-character-img {
+  position: absolute;
   height: 20rem;
+}
+
+.circle-text {
+  position: relative;
 }
 
 .circle-text-paragraph {
