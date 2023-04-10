@@ -148,6 +148,8 @@ body {
   width: 100%;
 
   font-size: 2.2rem;
+  top: -245px;
+  left: 70px;
 }
 
 .circle-text span {
