@@ -80,17 +80,18 @@ body {
   grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
   border: 1px solid black;
   align-items: center;
-  justify-items: center;
+  /* justify-items: center; */
   /* padding: 0.8rem 0 0.8rem 0; */
 
   grid-gap: 1px;
 }
 
 .nav-link-container {
+  display: grid;
   border-left: 1px solid black;
   padding: 0.8rem 0 0.8rem 2.2rem;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link-container:first-of-type {
