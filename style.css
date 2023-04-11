@@ -80,9 +80,6 @@ body {
   grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
   border: 1px solid black;
   align-items: center;
-  /* justify-items: center; */
-  /* padding: 0.8rem 0 0.8rem 0; */
-
   grid-gap: 1px;
 }
 
@@ -140,7 +137,6 @@ body {
 
 .circle-text {
   position: relative;
-  /* position: absolute; */
 }
 
 .circle-text-paragraph {
@@ -149,14 +145,22 @@ body {
   width: 100%;
 
   font-size: 2.2rem;
-  top: -245px;
+  /* top: -245px; */
   left: 70px;
+
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .circle-text span {
   position: absolute;
-  /* top: 10%;
-  left: 4.5%; */
   transform-origin: 0 150px;
 }
 
