@@ -135,28 +135,27 @@ body {
   height: 20rem;
 }
 
-.circle-text {
+.circle {
   position: relative;
 }
 
-.circle-text-paragraph {
+.circle-text {
   position: absolute;
-
   width: 100%;
-
-  font-size: 2.2rem;
-  /* top: -245px; */
-  left: 70px;
-
-  animation: rotateText 10s linear infinite;
+  height: 100%;
+  animation: anim 10s linear infinite;
 }
-@keyframes rotateText {
+@keyframe anim {
   0% {
-    transform: rotate(360deg);
-  }
-  100% {
     transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-text-paragraph {
+  font-size: 1.8rem;
 }
 
 .circle-text span {
