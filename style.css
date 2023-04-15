@@ -116,14 +116,14 @@ body {
 .title-logo-box {
   position: relative;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
 
   margin-top: 12rem;
   margin-left: 10rem;
 
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .title-img {
@@ -131,35 +131,48 @@ body {
 }
 
 .logo-character-img {
-  /* position: absolute; */
   height: 20rem;
 }
 
 .circle {
   position: relative;
+  width: 300px;
+  height: 300px;
+  /* background-color: #ccc; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.circle-text {
+.logo {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: anim 10s linear infinite;
+  width: 175px;
+  height: 175px;
+  /* border-radius: 50%; */
+
+  /* background-color: #fff; */
 }
-@keyframe anim {
+
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: rotateText 20s linear infinite;
+}
+@keyframes rotateText {
   0% {
-    transform: rotate(0deg);
-  }
-  100% {
     transform: rotate(360deg);
   }
-}
-/* circle styles */
-.circle-text-paragraph {
-  font-size: 1.8rem;
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-.circle-text span {
+.text span {
   position: absolute;
+  left: 50%;
+  font-size: 1.8em;
   transform-origin: 0 150px;
 }
 

@@ -27,8 +27,16 @@ submitButton.addEventListener("click", (event) => {
 
 // circle text animation
 
-const circleText = document.querySelector(".circle-text p");
-circleText.innerHTML = circleText.innerText
+// const circleText = document.querySelector(".circle-text p");
+// circleText.innerHTML = circleText.innerText
+//   .split("")
+//   .map(
+//     (char, i) => `<span style="transform:rotate(${i * 6}deg)">${char}</span>`
+//   )
+//   .join("");
+
+const text = document.querySelector(".text p");
+text.innerHTML = text.innerText
   .split("")
   .map(
     (char, i) => `<span style="transform:rotate(${i * 6}deg)">${char}</span>`
