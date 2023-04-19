@@ -113,21 +113,25 @@ body {
   font-size: 2.4rem;
 }
 
+.section-hero {
+  margin-left: 10vw;
+}
+
 .title-logo-box {
   position: relative;
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 2fr 1fr;
 
-  margin-top: 12rem;
+  margin-top: 6rem;
   margin-left: 10rem;
 
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 5vw;
 }
 
 .title-img {
-  height: 20rem;
+  height: 15vw;
 }
 
 .logo-character-img {
@@ -136,8 +140,8 @@ body {
 
 .circle {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
   /* background-color: #ccc; */
   border-radius: 50%;
   display: flex;
@@ -147,8 +151,8 @@ body {
 
 .logo {
   position: absolute;
-  width: 175px;
-  height: 175px;
+  width: 12vw;
+  height: 12vw;
   /* border-radius: 50%; */
 
   /* background-color: #fff; */
@@ -172,13 +176,15 @@ body {
 .text span {
   position: absolute;
   left: 50%;
-  font-size: 1.8em;
-  transform-origin: 0 150px;
+  font-size: 1.4vw;
+  transform-origin: 0 10vw;
 }
 
 .hero-description {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  /* grid-template-columns: 4fr 1fr; */
+  align-items: start;
+  justify-content: start;
 }
 
 .hero-description p {
@@ -186,7 +192,41 @@ body {
   grid-column: 1;
 
   margin-top: 8rem;
-  margin-left: 12rem;
+  margin-left: 10rem;
 
-  width: 100rem;
+  width: 80vw;
+}
+
+.cta-box {
+  margin-top: 6rem;
+  margin-left: 10rem;
+}
+
+.email-sign-up-form {
+  position: relative;7
+}
+
+.email-input {
+  font-size: 2.8rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 10rem;
+  padding-right: 40rem;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+
+.submit-button {
+  position: absolute;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 3.2rem;
+  padding-right: 3.4rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  transform: translateX(-1.0rem);
+
+  font-size: 2.8rem;
+  background-color: black;
+  color: white;
 }
