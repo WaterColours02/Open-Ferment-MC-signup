@@ -78,14 +78,15 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
-  border: 1px solid black;
+  border: 3px solid black;
+  border-top: none;
   align-items: center;
   grid-gap: 1px;
 }
 
 .nav-link-container {
   display: grid;
-  border-left: 1px solid black;
+  border-left: 3px solid black;
   padding: 0.8rem 0 0.8rem 2.2rem;
   justify-content: center;
   align-items: center;
