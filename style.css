@@ -256,3 +256,53 @@ body {
   /* padding: 2.2remx */
 
 }
+
+.error-modal-overlay {
+  position: absolute;
+  display: grid;
+
+  justify-self: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  opacity: 70%;
+
+  background-color: grey;
+
+
+}
+
+.error-modal {
+  position: absolute;
+  top: 40vh;
+  left: 35vw;
+
+  opacity: 100% !important;
+}
+
+.close-button {
+  position: absolute;
+  top: -1.4em;
+  left: 2.4rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  border: 3px solid black;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.error-modal-text {
+  background-color: white;
+
+  padding: 6.4rem;
+  font-size: 2.4rem;
+
+  width: 60rem;
+
+  border-radius: 2.4rem;
+
+  border: 3px solid black
+}
