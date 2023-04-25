@@ -111,7 +111,8 @@ body {
 }
 
 .nav-link-instagram {
-  font-size: 2.4rem;
+font-size: 3.2rem
+  --ionicon-stroke-width: 0.6rem
 }
 
 /* .section-hero {
@@ -257,6 +258,16 @@ body {
 
 }
 
+.hidden {
+  display: hidden !important;
+  pointer-events: none !important;
+}
+
+.overlay-hidden {
+ display: hidden !important;
+ pointer-events: !important;
+}
+
 .success-modal-overlay,
 .error-modal-overlay {
   position: absolute;
@@ -271,7 +282,7 @@ body {
 
   opacity: 70%;
 
-  background-color: grey;
+  background-color: rgb(37, 37, 37);
 
 
 }

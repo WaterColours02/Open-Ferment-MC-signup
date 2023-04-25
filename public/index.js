@@ -42,3 +42,14 @@ text.innerHTML = text.innerText
     (char, i) => `<span style="transform:rotate(${i * 6}deg)">${char}</span>`
   )
   .join("");
+
+const errorModal = document.querySelector(".error-modal");
+const successModal = document.querySelector(".success-modal");
+const successModalOverlay = document.querySelector(".success-modal-overlay");
+
+const closeButton = document.querySelector(".close-button");
+closeButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  successModal.classList.add("hidden");
+  successModalOverlay.classList.add("overlay-hidden");
+});
