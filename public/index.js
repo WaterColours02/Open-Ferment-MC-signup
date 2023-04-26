@@ -18,22 +18,13 @@ submitButton.addEventListener("click", (event) => {
     fetch("/subscribe", fetchData).then((res) => {
       if (res.ok) {
         console.log("Yay it worked");
+        showSuccessModal();
       } else {
-        // alert("please add an email");
+        showErrorModal();
       }
     });
   }
 });
-
-// circle text animation
-
-// const circleText = document.querySelector(".circle-text p");
-// circleText.innerHTML = circleText.innerText
-//   .split("")
-//   .map(
-//     (char, i) => `<span style="transform:rotate(${i * 6}deg)">${char}</span>`
-//   )
-//   .join("");
 
 const text = document.querySelector(".text p");
 text.innerHTML = text.innerText
@@ -44,12 +35,31 @@ text.innerHTML = text.innerText
   .join("");
 
 const errorModal = document.querySelector(".error-modal");
+const errorModalOverlay = document.querySelector(".error-modal-overlay");
+
 const successModal = document.querySelector(".success-modal");
 const successModalOverlay = document.querySelector(".success-modal-overlay");
 
-const closeButton = document.querySelector(".close-button");
+const successCloseButton = document.querySelector(".success-close-button");
 closeButton.addEventListener("click", (event) => {
   event.preventDefault();
   successModal.classList.add("hidden");
-  successModalOverlay.classList.add("overlay-hidden");
+  successModalOverlay.classList.add("hidden");
 });
+
+const errorCloseButton = document.querySelector(".error-close-button");
+errorCloseButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  errorModal.classList.add("hidden");
+  errorModalOverlay.classList.add("hidden");
+});
+
+function showSuccessModal() {
+  successModal.classList.remove("hidden");
+  successModalOverlay.classList.remove("hidden");
+}
+
+function showErrorModal() {
+  errorModal.classList.remove("hidden");
+  errorModalOverlay.classList.remove("hidden");
+}
