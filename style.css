@@ -113,8 +113,8 @@ body {
 }
 
 .nav-link-instagram {
-font-size: 3.2rem
-  --ionicon-stroke-width: 0.6rem
+  font-size: 3.2rem;
+  --ionicon-stroke-width: 0.4rem;
 }
 
 /* .section-hero {
@@ -143,7 +143,7 @@ font-size: 3.2rem
 
 .logo-character-img {
   height: 20rem;
-  width: 15rem
+  width: 15rem;
 }
 
 .circle {
@@ -213,7 +213,7 @@ font-size: 3.2rem
 }
 
 .email-sign-up-form {
-  position: relative;7
+  position: relative;
 }
 
 .email-input {
@@ -234,7 +234,7 @@ font-size: 3.2rem
   padding-right: 3.4rem;
   border-top-right-radius: 5rem;
   border-bottom-right-radius: 5rem;
-  transform: translateX(-1.0rem);
+  transform: translateX(-1rem);
 
   font-size: 2.8rem;
   background-color: black;
@@ -245,19 +245,18 @@ font-size: 3.2rem
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
- margin-top: 4rem;
- margin-bottom: 4rem;
- margin-left: 10rem;
-/* margin-right: 10rem; */
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  /* margin-right: 10rem; */
   align-items: center;
   /* justify-items: center; */
-  gap: 5.6rem
+  gap: 5.6rem;
 }
 
 .footer-text {
   font-size: 3.2rem;
   padding: 2.2rem;
-
 }
 
 .hidden {
@@ -265,13 +264,12 @@ font-size: 3.2rem
   pointer-events: none !important;
   opacity: 0 !important;
   transform: translateX(1000%) !important;
-
 }
 
 .overlay-hidden {
- display: hidden !important;
- pointer-events: !important;
- opacity: 0 !important;
+  display: hidden !important;
+  pointer-events: !important;
+  opacity: 0% !important;
 }
 
 .success-modal-overlay,
@@ -289,8 +287,6 @@ font-size: 3.2rem
   opacity: 70%;
 
   background-color: rgb(37, 37, 37);
-
-
 }
 
 .success-modal,
@@ -302,23 +298,23 @@ font-size: 3.2rem
   opacity: 100% !important;
 }
 
-
-.close-button {
+.success-close-button,
+.error-close-button {
+  visibility: visible;
+  cursor: pointer;
   position: absolute;
   top: -1.6rem;
   left: 2.8rem;
   /* padding: 0.4rem; */
-
+  background-color: white;
   border-radius: 50%;
   border: 3px solid black;
-
 }
 
 .close-button-icon {
   font-size: 3.2rem;
   transform: translateY(0.2rem);
 }
-
 
 .success-modal-text,
 .error-modal-text {
@@ -331,5 +327,5 @@ font-size: 3.2rem
 
   border-radius: 2.4rem;
 
-  border: 3px solid black
+  border: 3px solid black;
 }
