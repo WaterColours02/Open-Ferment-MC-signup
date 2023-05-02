@@ -241,6 +241,13 @@ body {
   font-size: 2.8rem;
   background-color: black;
   color: white;
+
+  transition: 0.4s
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(56, 56, 56);
 }
 
 .footer-grid {
