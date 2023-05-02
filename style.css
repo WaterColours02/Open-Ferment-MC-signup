@@ -113,7 +113,7 @@ body {
 }
 
 .nav-link-instagram {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   --ionicon-stroke-width: 0.4rem;
 }
 
@@ -274,6 +274,7 @@ body {
 
 .success-modal-overlay,
 .error-modal-overlay {
+  position: inherit;
   position: absolute;
   display: grid;
 
@@ -300,6 +301,7 @@ body {
 
 .success-close-button,
 .error-close-button {
+  pointer-events: inherit;
   visibility: visible;
   cursor: pointer;
   position: absolute;
@@ -312,6 +314,7 @@ body {
 }
 
 .close-button-icon {
+  pointer-events: inherit;
   font-size: 3.2rem;
   transform: translateY(0.2rem);
 }
