@@ -1,3 +1,5 @@
+
+//EMAIL LIST FUNCTIONALITY
 const submitButton = document.querySelector(".submit-button");
 const email = document.querySelector(".email-input");
 
@@ -5,7 +7,7 @@ console.log(email.value);
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
-  // console.log(email.value);  data flow test print
+  console.log(email.value); 
   if ((email.value == null || history, email.value == "")) {
     alert("please add an email");
   } else {
@@ -34,6 +36,8 @@ text.innerHTML = text.innerText
   )
   .join("");
 
+// ERROR and SUCCESS MODALS
+
 const errorModal = document.querySelector(".error-modal");
 const errorModalOverlay = document.querySelector(".error-modal-overlay");
 
@@ -45,7 +49,12 @@ successCloseButton.addEventListener("click", (event) => {
   event.preventDefault();
   successModal.classList.add("hidden");
   successModalOverlay.classList.add("hidden");
+  clearField(email)
 });
+
+function clearField(fieldClass) {
+    fieldClass.value = "";
+}
 
 const errorCloseButton = document.querySelector(".error-close-button");
 errorCloseButton.addEventListener("click", (event) => {
