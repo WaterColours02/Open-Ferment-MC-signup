@@ -41,7 +41,7 @@ const successModal = document.querySelector(".success-modal");
 const successModalOverlay = document.querySelector(".success-modal-overlay");
 
 const successCloseButton = document.querySelector(".success-close-button");
-closeButton.addEventListener("click", (event) => {
+successCloseButton.addEventListener("click", (event) => {
   event.preventDefault();
   successModal.classList.add("hidden");
   successModalOverlay.classList.add("hidden");

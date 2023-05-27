@@ -71,7 +71,7 @@ body {
 
   overflow: hidden;
 
-  background-image: url("./images/OpenFermentBackgroundv1.jpg");
+  background-image: url("/images/OpenFermentBackgroundv1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -85,7 +85,7 @@ body {
   border: 3px solid black;
   border-top: none;
   align-items: center;
-  grid-gap: 1px;
+  grid-gap: px;
 }
 
 .nav-link-container {
@@ -222,10 +222,18 @@ body {
   font-size: 2.8rem;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-  padding-left: 10rem;
-  padding-right: 40rem;
+  padding-left: 5rem;
+  padding-right: 50rem;
   border-top-left-radius: 5rem;
   border-bottom-left-radius: 5rem;
+}
+
+.email-input:focus{
+  
+}
+
+.email-input::content {
+  padding-right: 20rem;
 }
 
 .submit-button {
@@ -254,7 +262,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  margin-top: 4rem;
+  margin-top: 12vh;
   margin-bottom: 4rem;
   margin-left: 10rem;
   /* margin-right: 10rem; */
