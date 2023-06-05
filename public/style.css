@@ -85,13 +85,13 @@ body {
   border: 3px solid black;
   border-top: none;
   align-items: center;
-  grid-gap: px;
+  grid-gap: 2px;
 }
 
 .nav-link-container {
   display: grid;
   border-left: 3px solid black;
-  padding: 0.8rem 0 0.8rem 2.2rem;
+  padding: 0.6rem 0 0.6rem 2.0rem;
   justify-content: center;
   align-items: center;
 }

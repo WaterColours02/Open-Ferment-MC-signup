@@ -12,14 +12,13 @@ console.log(email.value);
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   console.log(email.value); 
-  if ((email.value == null || history, email.value == "")) {
-    alert("please add an email");
-  }
-  else {
+  if (email.value == null || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value)) {
+    showErrorModal();
+  } else {
     let fetchData = {
       method: "POST",
       body: JSON.stringify({ email: email.value, js: true }),
-      headers: { "Content-Type": "application/json " },
+      headers: { "Content-Type": "application/json" },
     };
 
     fetch("/subscribe", fetchData).then((res) => {
