@@ -3,6 +3,10 @@
 const submitButton = document.querySelector(".submit-button");
 const email = document.querySelector(".email-input");
 
+
+
+
+
 console.log(email.value);
 
 submitButton.addEventListener("click", (event) => {
@@ -10,7 +14,8 @@ submitButton.addEventListener("click", (event) => {
   console.log(email.value); 
   if ((email.value == null || history, email.value == "")) {
     alert("please add an email");
-  } else {
+  }
+  else {
     let fetchData = {
       method: "POST",
       body: JSON.stringify({ email: email.value, js: true }),
