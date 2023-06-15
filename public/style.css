@@ -73,7 +73,7 @@ body {
 
   background-image: url("/images/OpenFermentBackgroundv1.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat:repeat;
 
   font-family: "Exo 2", sans-serif;
 }
@@ -84,16 +84,17 @@ body {
   grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
   border: 3px solid black;
   border-top: none;
-  align-items: center;
-  grid-gap: 2px;
+  /* align-items: center; */
+  grid-gap: 1px;
 }
 
 .nav-link-container {
   display: grid;
   border-left: 3px solid black;
-  padding: 0.6rem 0 0.6rem 2.0rem;
+  padding: 0rem 0 0rem 0rem;
   justify-content: center;
   align-items: center;
+  
 }
 
 .nav-link-container:first-of-type {
@@ -103,7 +104,7 @@ body {
 .nav-link:link,
 .nav-link {
   color: black;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-decoration: none;
   align-self: center;
   justify-self: center;

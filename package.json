@@ -17,6 +17,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "netlify-cli": "^15.4.0",
     "nodemon": "^2.0.21"
   }
 }
